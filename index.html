@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a id = "scoreList">High Scores</a>
+            <div id = "countDown"></div>
+        </nav>
+    </header>
+    <section class = "main">
+        <h1>Coding Quiz</h1>
+        <p>Press the "Start Quiz" button and try to answer as many questions correctly as you can within the time limit.
+        <p>For every incorrect answer there is a time penalty of 10 seconds.</p>
+        <p>Don't forget to log your high score when you're done.</p>
+        <p>Good luck!</p>
+        <button id = "startButton">Start Quiz</button>
+    </section>
+    <section class = "firstQuestion">
+        <h2>Commonly used data types do NOT include:</h2>
+        <button>A. Strings</button>
+        <button>B. Booleans</button>
+        <button>C. Alerts</button>
+        <button>D. Numbers</button>
+    </section>
+    <section class = "secondQuestion">
+        <h2>The condition in an if/else statement is enclosed within _____.</h2>
+        <button>A. Quotes</button>
+        <button>B. Curly Brackets</button>
+        <button>C. Parentheses</button>
+        <button>D. Square Brackets</button>
+    </section>
+    <section class = "thirdQuestion">
+        <h2>Arrays in JavaScript can be used to store _____.</h2>
+        <button>A. Numbers and Strings</button>
+        <button>B. Other Arrays</button>
+        <button>C. Booleans</button>
+        <button>D. All Of The Above</button>
+    </section>
+    <section class = "fourthQuestion">
+        <h2>String values must be enclosed within ______ when being assigned to variables.</h2>
+        <button>A. Commas</button>
+        <button>B. Curly Brackets</button>
+        <button>C. Quotes</button>
+        <button>D. Parentheses</button>
+    </section>
+    <section class = "fifthQuestion">
+        <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+        <button>A. JavaScript</button>
+        <button>B. Terminal/Bash</button>
+        <button>C. For Loops</button>
+        <button>D. Console.Log</button>
+    </section>
+    <section class = "enterScore">
+        <h2>All Done!</h2>
+        <form class = "highScore">
+            <div id = "finalScore"></div>
+            <p>Enter Initials:</p>
+            <textarea id = "initials"></textarea>
+            <button id = "submitScore">Submit</button>
+        </form>
+    </section>
+</br>
+</br>
+</br>
+
+
+    <script src = "script.js"></script>
+  </body>
