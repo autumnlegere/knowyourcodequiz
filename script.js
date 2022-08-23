@@ -60,8 +60,6 @@ function setTimer() {
 }
 
 
-
-
 var questions = [
     {
         questionText: 'Commonly used data types do NOT include:',
@@ -94,15 +92,37 @@ var questions = [
     }
 ]
 
-
-
+//for(var i=0; i < questions.length; i++);
+//console.log(questions[i]);
 
 //when start button is clicked, timer will start
 startButton.addEventListener("click", function() {
     
     setTimer();
     startPage.style.display = "none";
-    quiz.textContent = questions.questionText[0];
-    
-})
+
+    var h1 = document.createElement("h1");
+    h1.textContent = questions[0].questionText;
+    quiz.append(h1);
+
+
+    for(var i=0; i < questions[0].answers.length; i++){
+        var button = document.createElement("button");
+        button.textContent = questions[0].answers[i];
+        quiz.append(button);
+    }
+
+});
+
+
+
+
+
+
+//append and loop through answers
+//questions[0].answers
+//event listener for click on each answer loop
+//pseudocode and analyze
+
+//event target
 
