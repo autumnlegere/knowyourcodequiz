@@ -10,6 +10,7 @@ nav {
     margin: 3%;
   }
 
+/*Display settings for main body of page*/
 .main {
     display: flex;
     flex-direction: column;
@@ -25,6 +26,7 @@ nav {
     margin: 3%;
 }
 
+/*All buttons within a section will display flex column*/
 section button {
     display: flex;
     flex-direction: column;
